@@ -1,0 +1,12 @@
+python main_text.py \
+    --config=configs/transfer/config/text.yaml \
+    --server-home=/home/gch/project/biye_final/BLPMS/ \
+    --log-dir=runs/520 \
+    --name=train \
+    --epochs=2 \
+    --weight-epochs=2  \
+    --weight-mask-type=common \
+    --emb-model=bert-base-uncased \
+    --lr=0.001 \
+    --train-weight-lr=0.001 \
+    --text-tasks=ag,yelp,amazon,yahoo,dbpedia
