@@ -1,0 +1,16 @@
+[2024-03-26 15:51:31,199] [INFO] [real_accelerator.py:191:get_accelerator] Setting ds_accelerator to cuda (auto detect)
+[2024-03-26 15:51:33,925] [WARNING] [runner.py:202:fetch_hostfile] Unable to find hostfile, will proceed with training with local resources only.
+[2024-03-26 15:51:33,926] [INFO] [runner.py:568:main] cmd = /home/xym/.conda/envs/baichuan2/bin/python -u -m deepspeed.launcher.launch --world_info=eyJsb2NhbGhvc3QiOiBbM119 --master_addr=127.0.0.1 --master_port=25641 --enable_each_rank_log=None fine-tune.py --use_lora True --report_to none --data_path /home/xym/mycode/identification_logic_credibility/blurbgenrecollectionen/baichuan_data/train_chain_tag_list_8.json --model_name_or_path /home/xym/othercode/base_model/baichuan2_chat --output_dir /home/xym/mycode/identification_logic_credibility/blurbgenrecollectionen/baichuan_output/test --model_max_length 2048 --num_train_epochs 1.0 --per_device_train_batch_size 8 --gradient_accumulation_steps 1 --save_strategy epoch --learning_rate 2e-5 --lr_scheduler_type constant --adam_beta1 0.9 --adam_beta2 0.98 --adam_epsilon 1e-8 --max_grad_norm 1.0 --weight_decay 1e-4 --warmup_ratio 0.0 --logging_steps 1 --gradient_checkpointing True --deepspeed ds_config.json --bf16 True --tf32 True
+[2024-03-26 15:51:36,010] [INFO] [real_accelerator.py:191:get_accelerator] Setting ds_accelerator to cuda (auto detect)
+[2024-03-26 15:51:38,451] [INFO] [launch.py:145:main] WORLD INFO DICT: {'localhost': [3]}
+[2024-03-26 15:51:38,452] [INFO] [launch.py:151:main] nnodes=1, num_local_procs=1, node_rank=0
+[2024-03-26 15:51:38,452] [INFO] [launch.py:162:main] global_rank_mapping=defaultdict(<class 'list'>, {'localhost': [0]})
+[2024-03-26 15:51:38,452] [INFO] [launch.py:163:main] dist_world_size=1
+[2024-03-26 15:51:38,452] [INFO] [launch.py:165:main] Setting CUDA_VISIBLE_DEVICES=3
+[2024-03-26 15:51:40,891] [INFO] [real_accelerator.py:191:get_accelerator] Setting ds_accelerator to cuda (auto detect)
+[2024-03-26 15:51:42,392] [INFO] [comm.py:637:init_distributed] cdb=None
+[2024-03-26 15:51:42,392] [INFO] [comm.py:668:init_distributed] Initializing TorchBackend in DeepSpeed with backend nccl
+Parameter Offload: Total persistent parameters: 790528 in 129 params
+
+100%|██████████| 9188/9188 [34:06:39<00:00, 13.37s/it]
+[2024-03-28 01:58:46,262] [INFO] [launch.py:347:main] Process 1750217 exits successfully.

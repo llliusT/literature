@@ -1,0 +1,7 @@
+numpy
+transformers
+torch
+sentencepiece
+tokenizers
+accelerate
+deepspeed
